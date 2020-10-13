@@ -27,13 +27,13 @@ class Navbar extends Component {
                             <Navitem item="Home" tolink="/" activec={this.activeitem}></Navitem>
                         </div>
                         <div href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                            <Navitem item="About" tolink="/about" activec={this.activeitem}></Navitem>
+                            <Navitem item="Experiences" tolink="/experiences" activec={this.activeitem}></Navitem>
                         </div><div href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
                             <Navitem item="Education" tolink="/education" activec={this.activeitem}></Navitem>
                         </div><div href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
                             <Navitem item="Skills" tolink="/skills" activec={this.activeitem}></Navitem>
                         </div><div href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                            <Navitem item="Contact" tolink="/contact" activec={this.activeitem}></Navitem>
+                            <Navitem item="Contacts" tolink="/contacts" activec={this.activeitem}></Navitem>
                         </div>
                     </div>
                 </div>
