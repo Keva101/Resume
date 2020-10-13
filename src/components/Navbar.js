@@ -17,14 +17,26 @@ class Navbar extends Component {
     };
     render() {
         return (
-            <nav>
-                <ul class="flex">
-                    <Navitem item="Home" tolink="/" activec={this.activeitem}></Navitem>
-                    <Navitem item="About" tolink="/about" activec={this.activeitem}></Navitem>
-                    <Navitem item="Education" tolink="/education" activec={this.activeitem}></Navitem>
-                    <Navitem item="Skills" tolink="/skills" activec={this.activeitem}></Navitem>
-                    <Navitem item="Contact" tolink="/contact" activec={this.activeitem}></Navitem>
-                </ul>
+            <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6 w-full h-6 text-right pb-10">
+                <div className="flex items-center flex-shrink-0 text-white">
+                    <span className="font-semibold text-xl tracking-tight">Keva Newman</span>
+                </div>
+                <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                    <div className="text-sm lg:flex-grow">
+                        <div href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                            <Navitem item="Home" tolink="/" activec={this.activeitem}></Navitem>
+                        </div>
+                        <div href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                            <Navitem item="About" tolink="/about" activec={this.activeitem}></Navitem>
+                        </div><div href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                            <Navitem item="Education" tolink="/education" activec={this.activeitem}></Navitem>
+                        </div><div href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                            <Navitem item="Skills" tolink="/skills" activec={this.activeitem}></Navitem>
+                        </div><div href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                            <Navitem item="Contact" tolink="/contact" activec={this.activeitem}></Navitem>
+                        </div>
+                    </div>
+                </div>
             </nav>
         )
     }
